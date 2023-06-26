@@ -45,6 +45,12 @@
 #define SVGKIT_WATCH 0
 #endif
 
+#if TARGET_OS_XR
+#define SVGKIT_VISION 1
+#else
+#define SVGKIT_VISION 0
+#endif
+
 #if SVGKIT_MAC
 #ifndef UIImage
 #define UIImage NSImage

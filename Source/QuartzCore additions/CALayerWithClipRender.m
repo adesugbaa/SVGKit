@@ -65,7 +65,7 @@
 #if SVGKIT_MAC
         scale = MAX(scale, [[NSScreen mainScreen] backingScaleFactor]);
 #elif SVGKIT_VISION
-        scale = MAX(scale, 3)
+      scale = MAX(scale, 3);
 #else
         scale = MAX(scale, [[UIScreen mainScreen] scale]);
 #endif
